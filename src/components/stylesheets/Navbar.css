@@ -1,0 +1,47 @@
+.navbar p {
+  display: none;
+}
+
+.navbar-top {
+  position: fixed;
+  height: 60px;
+  width: 100vw;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: transparent;
+}
+
+.navbar-active {
+  position: fixed;
+  background: #2671E1;
+  color: white;
+  font-size: 64px;
+  font-weight: medium;
+  display: block;
+  z-index: 22;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar-green {
+  background: green;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: medium;
+  padding: 10px 0 0 10px;
+}
+
+.menu-icon {
+  margin-right: 10px;
+  margin-top: 5px;
+  height: 35px;
+  width: 40px;
+}
+/*# sourceMappingURL=Navbar.css.map */

@@ -3,7 +3,7 @@ import downarrow from '../images/down.png'
 import codeLogo from '../images/coding.png'
 import lightbulb from '../images/lightbulb.png'
 import book from '../images/book.png'
-import './Intro.css'
+import './stylesheets/Intro.css'
 
 const Intro = () => {
     return (

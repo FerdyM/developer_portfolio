@@ -1,5 +1,5 @@
 import React from 'react';
-import './LandingPage.css';
+import './stylesheets/LandingPage.css';
 import downArrow from '../images/down.png'
 
 const Main = () => {
