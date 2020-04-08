@@ -4,6 +4,7 @@ import menu from '../images/menu.png'
 import githubLogo from '../images/white-github-logo.png'
 import linkedInLogo from '../images/white-linkedin-logo.png'
 import twitterLogo from '../images/white-twitter-logo.png'
+import {Link} from "react-router-dom"
 
 class Navbar extends Component {
     constructor(props) {
@@ -31,8 +32,12 @@ class Navbar extends Component {
                     <img className="menu-icon" src={menu} alt="menu icon" onClick={this.triggerMenu} />
                 </div>
                 <ul className="cont">
-                    <li className="first">Home</li>
-                    <li>About</li>
+                    <Link to="/">
+                        <li className="first">Home</li>
+                    </Link>
+                    <Link to="/about">
+                        <li>About</li>
+                    </Link>
                     <li>Contact</li>
                     <li className="last">Resume</li>
                 </ul>
