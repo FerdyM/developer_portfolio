@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
 import './stylesheets/Navbar.css';
-import menu from '../images/open-menu.png'
-
-// const Navbar = () => {
-//     return (
-//         <div className="navbar">
-//             <h2 className="navbar-title">Ferdy Macleod</h2>
-//             <img className="menu-icon" src={menu} alt="menu icon" />
-//         </div>
-//     )
-// }
+import menu from '../images/menu.png'
+import githubLogo from '../images/white-github-logo.png'
+import linkedInLogo from '../images/white-linkedin-logo.png'
+import twitterLogo from '../images/white-twitter-logo.png'
 
 class Navbar extends Component {
     constructor(props) {
@@ -36,10 +30,18 @@ class Navbar extends Component {
                     <h2 className="navbar-title">Ferdy Macleod</h2>
                     <img className="menu-icon" src={menu} alt="menu icon" onClick={this.triggerMenu} />
                 </div>
-                <p>Home</p>
-                <p>About</p>
-                <p>Contact</p>
-                <p>Resume</p>
+                <ul className="cont">
+                    <li className="first">Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li className="last">Resume</li>
+                </ul>
+                <span className="line"></span>
+                <div className="social-media-link-container">
+                    <img className="github-logo" src={githubLogo} alt="link to my github" />
+                    <img className="linkedin-logo" src={linkedInLogo} alt="link to my linkedin" />
+                    <img className="twitter-logo" src={twitterLogo} alt="link to my twitter" />
+                </div>
             </div>
         )
     }
