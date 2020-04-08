@@ -1,0 +1,97 @@
+.skills-container {
+    color: #2671E1;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 300px 300px 200px 300px;
+    .title {
+        font-size: 36px;
+        font-weight: medium;
+        margin: 0;
+        padding: 0;
+        justify-self: center;
+        align-self: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .line {
+        width: 350px;
+        height: 3px;
+        background: #2671E1;
+        justify-self: center;
+        align-self: flex-end;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .languages {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        width: 100%;
+        p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .row1 {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            height: 80px;
+            padding-bottom: 30px;
+        }
+        .row2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            height: 80px;
+        }
+        .skill-icon {
+            height: 80px;
+            width: 80px;
+        }
+    }
+    .frameworks {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        width: 100%;
+        p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .row3 {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            height: 80px;
+            padding-bottom: 30px;
+        }
+        .row4 {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            height: 80px;
+        }
+        .skill-icon {
+            height: 80px;
+            width: 80px;
+        }
+        .bulma-icon {
+            align-self: center;
+            width: 70px;
+            height: 20px;
+        }
+        .node-icon {
+            align-self: center;
+            width: 70px;
+            height: 45px;
+        }
+        .express-icon {
+            align-self: center;
+            width: 70px;
+            height: 12px;
+        }
+    }
+}

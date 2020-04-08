@@ -1,0 +1,163 @@
+.skills-container {
+  color: #2671E1;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 100px 300px 300px 200px 300px;
+      grid-template-rows: 100px 300px 300px 200px 300px;
+}
+
+.skills-container .title {
+  font-size: 36px;
+  font-weight: medium;
+  margin: 0;
+  padding: 0;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.skills-container .line {
+  width: 350px;
+  height: 3px;
+  background: #2671E1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.skills-container .languages {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  width: 100%;
+}
+
+.skills-container .languages p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.skills-container .languages .row1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 80px;
+  padding-bottom: 30px;
+}
+
+.skills-container .languages .row2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 80px;
+}
+
+.skills-container .languages .skill-icon {
+  height: 80px;
+  width: 80px;
+}
+
+.skills-container .frameworks {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  width: 100%;
+}
+
+.skills-container .frameworks p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.skills-container .frameworks .row3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 80px;
+  padding-bottom: 30px;
+}
+
+.skills-container .frameworks .row4 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 80px;
+}
+
+.skills-container .frameworks .skill-icon {
+  height: 80px;
+  width: 80px;
+}
+
+.skills-container .frameworks .bulma-icon {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70px;
+  height: 20px;
+}
+
+.skills-container .frameworks .node-icon {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70px;
+  height: 45px;
+}
+
+.skills-container .frameworks .express-icon {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70px;
+  height: 12px;
+}
+/*# sourceMappingURL=Myskills.css.map */

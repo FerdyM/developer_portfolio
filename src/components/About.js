@@ -1,4 +1,5 @@
 import React from 'react';
+import Myskills from './Myskills'
 
 const About = () => {
     return (
@@ -6,6 +7,7 @@ const About = () => {
             <h1>
                 This is the basic About page for now
             </h1>
+            <Myskills />
         </div>
     )
 }
