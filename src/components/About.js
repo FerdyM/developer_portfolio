@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Myskills from './Myskills'
+import Footer from './Footer'
 import placeholder from '../images/placeholder.png'
 import './stylesheets/About.css'
 
@@ -21,6 +22,7 @@ const About = () => {
                 </p>
             </div>
             <Myskills />
+            <Footer />
         </Fragment>
     )
 }
