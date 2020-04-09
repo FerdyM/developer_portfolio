@@ -15,6 +15,13 @@ import nodejsIcon from '../images/code-icons/nodeJS.png'
 import expressIcon from '../images/code-icons/expressJS.png'
 import materialIcon from '../images/code-icons/materialui.png'
 import railsIcon from '../images/code-icons/rails.png'
+import mongodbIcon from '../images/code-icons/mongodb.png'
+import postgresIcon from '../images/code-icons/postgres.png'
+import awsIcon from '../images/code-icons/aws.png'
+import awsiotIcon from '../images/code-icons/awsiot.png'
+import dockerIcon from '../images/code-icons/docker.png'
+import gitlabIcon from '../images/code-icons/gitlab.png'
+import githubBlack from '../images/code-icons/github-black.png'
 
 const Myskills = () => {
     return (
@@ -50,7 +57,25 @@ const Myskills = () => {
                 <img src={bulmaIcon} className="bulma-icon" alt="" />
                 </div>
             </div>
-
+            <div className="databases">
+                <p>Databases</p>
+                <div className="row5" >
+                    <img src={mongodbIcon} className="skill-icon" alt="" />
+                    <img src={postgresIcon} className="skill-icon" alt="" />
+                </div>
+            </div>
+            <div className="deployment">
+                <p>Deployment</p>
+                <div className="row6">
+                    <img src={awsIcon} className="aws-icon" alt="" />
+                    <img src={awsiotIcon} className="skill-icon" alt="" />
+                    <img src={dockerIcon} className="skill-icon" alt="" />
+                </div>
+                <div className="row7">
+                    <img src={githubBlack} className="skill-icon" alt="" />
+                    <img src={gitlabIcon} className="skill-icon" alt="" />
+                </div>
+            </div>
         </div>
     )
 }

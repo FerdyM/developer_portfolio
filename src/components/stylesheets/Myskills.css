@@ -160,4 +160,94 @@
   width: 70px;
   height: 12px;
 }
+
+.skills-container .databases {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  width: 100%;
+}
+
+.skills-container .databases p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.skills-container .databases .row5 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 80px;
+  padding-bottom: 30px;
+}
+
+.skills-container .databases .skill-icon {
+  height: 80px;
+  width: 80px;
+}
+
+.skills-container .deployment {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  width: 100%;
+}
+
+.skills-container .deployment p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.skills-container .deployment .row6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 80px;
+  padding-bottom: 30px;
+}
+
+.skills-container .deployment .row7 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 80px;
+  padding-bottom: 30px;
+}
+
+.skills-container .deployment .skill-icon {
+  height: 80px;
+  width: 80px;
+}
+
+.skills-container .deployment .aws-icon {
+  width: 80px;
+  height: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=Myskills.css.map */
