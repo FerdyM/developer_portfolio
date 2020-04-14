@@ -1,0 +1,42 @@
+.projects-container {
+    width: 100%;
+    color: white;
+    .project1 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 100px 80px 1fr;
+        width: 100%;
+        height: 300px;
+        background: yellow;
+        .project-title {
+            justify-self: center;
+            grid-row: 2/3;
+            width: 300px;
+            height: 90px;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            font-weight: medium;
+        }
+        .project-links-container {
+            justify-self: center;
+            grid-row: 3/4;
+            height: 80px;
+            width: 320px;
+            display: flex;
+            justify-content: space-between;
+            a {
+                width: 150px;
+                height: 80px;
+                background: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 28px;
+                font-weight: medium;
+            }
+        }
+    }
+}

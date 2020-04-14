@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import './stylesheets/LandingPage.css';
 import Intro from './Intro';
+import Projects from './Projects'
 import Footer from './Footer'
 import downArrow from '../images/down.png'
 
@@ -13,6 +14,7 @@ const Main = () => {
                 <img className="down-arrow" src={downArrow} alt="profile of me"/>
             </div>
             <Intro />
+            <Projects />
             <Footer />
         </Fragment>
     )

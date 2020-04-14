@@ -1,0 +1,70 @@
+.projects-container {
+  width: 100%;
+  color: white;
+}
+
+.projects-container .project1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 1fr 100px 80px 1fr;
+      grid-template-rows: 1fr 100px 80px 1fr;
+  width: 100%;
+  height: 300px;
+  background: yellow;
+}
+
+.projects-container .project1 .project-title {
+  justify-self: center;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  width: 300px;
+  height: 90px;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 28px;
+  font-weight: medium;
+}
+
+.projects-container .project1 .project-links-container {
+  justify-self: center;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  height: 80px;
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects-container .project1 .project-links-container a {
+  width: 150px;
+  height: 80px;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 28px;
+  font-weight: medium;
+}
+/*# sourceMappingURL=Projects.css.map */
