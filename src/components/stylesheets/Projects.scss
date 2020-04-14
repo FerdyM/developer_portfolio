@@ -7,7 +7,7 @@
         grid-template-rows: 1fr 100px 80px 1fr;
         width: 100%;
         height: 300px;
-        background: yellow;
+        background: #E2D900;
         .project-title {
             justify-self: center;
             grid-row: 2/3;
@@ -38,5 +38,8 @@
                 font-weight: medium;
             }
         }
+    }
+    .project2 {
+        background: #9E0B0B;
     }
 }
