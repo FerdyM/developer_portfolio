@@ -1,0 +1,13 @@
+.contact-body {
+  position: relative;
+  padding-top: 60px;
+  height: calc(100vh - 60px);
+  width: 100%;
+}
+
+.contact-body .location-container {
+  height: 205px;
+  width: 100%;
+  background-color: wheat;
+}
+/*# sourceMappingURL=Contact.css.map */

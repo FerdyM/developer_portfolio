@@ -38,7 +38,10 @@ class Navbar extends Component {
                     <Link to="/about">
                         <li>About</li>
                     </Link>
+                    <Link to="/contact">
+
                     <li>Contact</li>
+                    </Link>
                     <li className="last">Resume</li>
                 </ul>
                 <span className="line"></span>
