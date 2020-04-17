@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios';
 import Footer from './Footer'
 import './stylesheets/Contact.css'
 import GithubLogo from '../images/code-icons/github-black.png'
@@ -32,7 +33,21 @@ class ContactForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        console.log(this.state);
+
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                name: this.state.name,
+                email: this.state.email,
+                subject: this.state.subject,
+                message: this.state.message
+            })
+        };
+        fetch('/api/contact', requestOptions)
+            .then(response => console.log(response))
+            .catch(err => console.log(err))
+
     }
 
     onFieldChange(event) {
