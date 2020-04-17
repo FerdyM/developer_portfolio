@@ -1,10 +1,10 @@
 import React from 'react'
-import axios from 'axios';
 import Footer from './Footer'
 import './stylesheets/Contact.css'
 import GithubLogo from '../images/code-icons/github-black.png'
 import TwitterLogo from '../images/code-icons/twitter-black.png'
 import LinkedinLogo from '../images/code-icons/linkedin-black.png'
+import {Link} from "react-router-dom"
 
 const Contact = () => {
     return (
@@ -67,9 +67,15 @@ class ContactForm extends React.Component {
                 <h2>Contact Information</h2>
                 <p>Email: ferdymacleod21@gmail.com</p>
                 <div className="links-container">
-                    <img src={GithubLogo} alt="github logo"/>
-                    <img src={TwitterLogo} alt="twitter logo"/>
-                    <img src={LinkedinLogo} alt="linkedin logo"/>
+                    <Link to="https://github.com/FerdyM" target="_blank">
+                        <img src={GithubLogo} alt="github logo"/>
+                    </Link>
+                    <Link to="https://twitter.com/ferdymacleod1" target="_blank">
+                        <img src={TwitterLogo} alt="twitter logo"/>
+                    </Link>
+                    <Link to="https://www.linkedin.com/in/ferdymacleod/" target="_blank">
+                        <img src={LinkedinLogo} alt="linkedin logo"/>
+                    </Link>
                 </div>
                 <p>Or</p>
                 <form onSubmit={this.handleSubmit}>
