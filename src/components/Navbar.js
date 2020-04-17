@@ -24,9 +24,19 @@ class Navbar extends Component {
         }
     }
 
+    scrollFunc = () => {
+        console.log(`value1: ${document.body.scrollTop}`)
+        console.log(`value2: ${document.documentElement.scrollTop}`)
+        // if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        //     document.getElementById("myP").className = "test";
+        // } else {
+            
+        // }
+    }
+
     render() {
         return (
-            <div className={this.state.navClass}>
+            <div className={this.state.navClass} onScroll={this.scrollFunc}>
                 <div className="navbar-top">
                     <h2 className="navbar-title">Ferdy Macleod</h2>
                     <img className="menu-icon" src={menu} alt="menu icon" onClick={this.triggerMenu} />
