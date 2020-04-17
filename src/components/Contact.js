@@ -8,10 +8,7 @@ import {Link} from "react-router-dom"
 
 const Contact = () => {
     return (
-        <div className="contact-body">
-            <div className="location-container">
-
-            </div>
+        <div>
             <ContactForm />
             <Footer />
         </div>
@@ -59,13 +56,10 @@ class ContactForm extends React.Component {
     render() {
         return (
             <div className="form-container">
-                <div className="title-container">
-                    <p className="title">    
-                        Contact Me
-                    </p>
-                </div>
+    
                 <h2>Contact Information</h2>
-                <p>Email: ferdymacleod21@gmail.com</p>
+                <p className="text">Email: ferdymacleod21@gmail.com</p>
+                <p className="text">Location: Brisbane, Australia</p>
                 <div className="links-container">
                     <Link to="https://github.com/FerdyM" target="_blank">
                         <img src={GithubLogo} alt="github logo"/>
@@ -77,23 +71,23 @@ class ContactForm extends React.Component {
                         <img src={LinkedinLogo} alt="linkedin logo"/>
                     </Link>
                 </div>
-                <p>Or</p>
+                <p className="or">Or</p>
                 <form onSubmit={this.handleSubmit}>
                     <div>
-                        <label htmlFor="name">Name</label>
-                        <input type="text" name="name" value={this.state.name} onChange={this.onFieldChange} />
+                        {/* <label htmlFor="name">Name</label> */}
+                        <input type="text" name="name" value={this.state.name} onChange={this.onFieldChange} placeholder="name"/>
                     </div>
                     <div>
-                        <label htmlFor="email">Email</label>
-                        <input type="text" name="email" value={this.state.email} onChange={this.onFieldChange} />
+                        {/* <label htmlFor="email">Email</label> */}
+                        <input type="text" name="email" value={this.state.email} onChange={this.onFieldChange} placeholder="email"/>
                     </div>
                     <div>
-                        <label htmlFor="subject">Subject</label>
-                        <input type="text" name="subject" value={this.state.subject} onChange={this.onFieldChange} />
+                        {/* <label htmlFor="subject">Subject</label> */}
+                        <input type="text" name="subject" value={this.state.subject} onChange={this.onFieldChange} placeholder="subject"/>
                     </div>
                     <div>
-                        <label htmlFor="message">Message</label>
-                        <input type="text" name="message" value={this.state.message} onChange={this.onFieldChange} />
+                        {/* <label htmlFor="message">Message</label> */}
+                        <input type="text" name="message" value={this.state.message} onChange={this.onFieldChange} placeholder="message"/>
                     </div>
                     <input className="submit-button" type="submit" value="Submit" />
                 </form>

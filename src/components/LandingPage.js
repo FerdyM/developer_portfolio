@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import './stylesheets/LandingPage.css';
 import Intro from './Intro';
 import Projects from './Projects'
-import Footer from './Footer'
 import downArrow from '../images/down.png'
 
 const Main = () => {
@@ -15,7 +14,6 @@ const Main = () => {
             </div>
             <Intro />
             <Projects />
-            <Footer />
         </Fragment>
     )
 }

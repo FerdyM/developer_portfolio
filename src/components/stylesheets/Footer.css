@@ -1,6 +1,6 @@
 .footer-container {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: auto;
   height: 70px;
   width: 100%;
   background: black;
