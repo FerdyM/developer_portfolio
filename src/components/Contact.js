@@ -58,8 +58,10 @@ class ContactForm extends React.Component {
             <div className="form-container">
     
                 <h2>Contact Information</h2>
-                <p className="text">Email: ferdymacleod21@gmail.com</p>
-                <p className="text">Location: Brisbane, Australia</p>
+
+                    <p className="text">Email: ferdymacleod21@gmail.com</p>
+                    <p className="text">Location: Brisbane, Australia</p>
+
                 <div className="links-container">
                     <Link to="https://github.com/FerdyM" target="_blank">
                         <img src={GithubLogo} alt="github logo"/>
@@ -73,10 +75,10 @@ class ContactForm extends React.Component {
                 </div>
                 <p className="or">Or</p>
                 <form onSubmit={this.handleSubmit}>
-                        <input className="inputField" type="text" name="name" value={this.state.name} onChange={this.onFieldChange} placeholder="name"/>
-                        <input className="inputField" type="text" name="email" value={this.state.email} onChange={this.onFieldChange} placeholder="email"/>
-                        <input className="inputField" type="text" name="subject" value={this.state.subject} onChange={this.onFieldChange} placeholder="subject"/>
-                        <textarea className="messageField" type="text" name="message" value={this.state.message} onChange={this.onFieldChange} placeholder="message"/>
+                        <input className="inputField" type="text" name="name" value={this.state.name} onChange={this.onFieldChange} placeholder="Name"/>
+                        <input className="inputField" type="text" name="email" value={this.state.email} onChange={this.onFieldChange} placeholder="Email"/>
+                        <input className="inputField" type="text" name="subject" value={this.state.subject} onChange={this.onFieldChange} placeholder="Subject"/>
+                        <textarea className="messageField" type="text" name="message" value={this.state.message} onChange={this.onFieldChange} placeholder="Message"/>
                     <input className="submit-button" type="submit" value="Submit" />
                 </form>
             </div>
