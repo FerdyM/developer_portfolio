@@ -73,22 +73,10 @@ class ContactForm extends React.Component {
                 </div>
                 <p className="or">Or</p>
                 <form onSubmit={this.handleSubmit}>
-                    <div>
-                        {/* <label htmlFor="name">Name</label> */}
-                        <input type="text" name="name" value={this.state.name} onChange={this.onFieldChange} placeholder="name"/>
-                    </div>
-                    <div>
-                        {/* <label htmlFor="email">Email</label> */}
-                        <input type="text" name="email" value={this.state.email} onChange={this.onFieldChange} placeholder="email"/>
-                    </div>
-                    <div>
-                        {/* <label htmlFor="subject">Subject</label> */}
-                        <input type="text" name="subject" value={this.state.subject} onChange={this.onFieldChange} placeholder="subject"/>
-                    </div>
-                    <div>
-                        {/* <label htmlFor="message">Message</label> */}
-                        <input type="text" name="message" value={this.state.message} onChange={this.onFieldChange} placeholder="message"/>
-                    </div>
+                        <input className="inputField" type="text" name="name" value={this.state.name} onChange={this.onFieldChange} placeholder="name"/>
+                        <input className="inputField" type="text" name="email" value={this.state.email} onChange={this.onFieldChange} placeholder="email"/>
+                        <input className="inputField" type="text" name="subject" value={this.state.subject} onChange={this.onFieldChange} placeholder="subject"/>
+                        <textarea className="messageField" type="text" name="message" value={this.state.message} onChange={this.onFieldChange} placeholder="message"/>
                     <input className="submit-button" type="submit" value="Submit" />
                 </form>
             </div>
