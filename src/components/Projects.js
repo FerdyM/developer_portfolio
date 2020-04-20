@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <Fragment>
             <div className="projects-container">
-                <div className="project1" >
+                <div className="project" >
                     <div className="project-title">
                         <p>Quiz game</p>
                     </div>
@@ -15,13 +15,22 @@ const Projects = () => {
                         <a className="view-live-link" href="https://romantic-goodall-9a7f7b.netlify.com/" target="_blank">View Live</a>
                     </div>
                 </div>
-                <div className="project1 project2" >
+                <div className="project project2" >
                     <div className="project-title">
                         <p>Web Portfolio</p>
                     </div>
                     <div className="project-links-container">
                         <a className="view-code-link" href="https://github.com/FerdyM/developer_portfolio" target="_blank">View Code</a>
                         <a className="view-live-link" href="https://localhost:3000" target="_blank">View Live</a>
+                    </div>
+                </div>
+                <div className="project project3" >
+                    <div className="project-title">
+                        <p>Robot Bartender</p>
+                    </div>
+                    <div className="project-links-container">
+                        <a className="view-code-link" href="https://github.com/FerdyM/SmartHomeDash" target="_blank">View Code</a>
+                        <a className="view-live-link" href="#" target="_blank">View Live</a>
                     </div>
                 </div>
 

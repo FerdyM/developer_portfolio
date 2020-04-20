@@ -1,7 +1,7 @@
 .projects-container {
     width: 100%;
     color: white;
-    .project1 {
+    .project {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 1fr 100px 80px 1fr;
@@ -41,5 +41,8 @@
     }
     .project2 {
         background: #9E0B0B;
+    }
+    .project3 {
+        background: #0008C0;
     }
 }

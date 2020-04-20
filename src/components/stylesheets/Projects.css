@@ -3,7 +3,7 @@
   color: white;
 }
 
-.projects-container .project1 {
+.projects-container .project {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
@@ -15,7 +15,7 @@
   background: #E2D900;
 }
 
-.projects-container .project1 .project-title {
+.projects-container .project .project-title {
   justify-self: center;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -36,7 +36,7 @@
   font-weight: medium;
 }
 
-.projects-container .project1 .project-links-container {
+.projects-container .project .project-links-container {
   justify-self: center;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
@@ -51,7 +51,7 @@
           justify-content: space-between;
 }
 
-.projects-container .project1 .project-links-container a {
+.projects-container .project .project-links-container a {
   width: 150px;
   height: 80px;
   background: black;
@@ -70,5 +70,9 @@
 
 .projects-container .project2 {
   background: #9E0B0B;
+}
+
+.projects-container .project3 {
+  background: #0008C0;
 }
 /*# sourceMappingURL=Projects.css.map */
