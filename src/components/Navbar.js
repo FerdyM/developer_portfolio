@@ -11,7 +11,11 @@ class Navbar extends Component {
         super(props)
         this.state = {
             menuActive: true,
-            navClass: "navbar"
+            navClass: "navbar",
+            menuItemOne: 'selected',
+            menuItemTwo: 'not-selected',
+            menuItemThree: 'not-selected',
+            menuItemFour: 'not-selected',
         }
     }
 
@@ -43,16 +47,35 @@ class Navbar extends Component {
                 </div>
                 <ul className="cont">
                     <Link to="/">
-                        <li className="first">Home</li>
+                        <li 
+                            className={this.state.menuItemOne} 
+                            onClick={() => this.setState({  menuItemOne: 'selected', menuItemTwo: 'not-selected', menuItemThree: 'not-selected', menuItemFour: 'not-selected'})}
+                        >
+                            Home
+                        </li>
                     </Link>
                     <Link to="/about">
-                        <li>About</li>
+                        <li 
+                            className={this.state.menuItemTwo}
+                            onClick={() => this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'selected', menuItemThree: 'not-selected', menuItemFour: 'not-selected'})}
+                        >
+                            About
+                        </li>
                     </Link>
                     <Link to="/contact">
-
-                    <li>Contact</li>
+                        <li 
+                            className={this.state.menuItemThree}
+                            onClick={() => this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'not-selected', menuItemThree: 'selected', menuItemFour: 'not-selected'})}
+                        >
+                            Contact
+                        </li>
                     </Link>
-                    <li className="last">Resume</li>
+                        <li 
+                            className={this.state.menuItemFour}
+                            onClick={() => this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'not-selected', menuItemThree: 'not-selected', menuItemFour: 'selected'})}
+                        >
+                            Resume
+                        </li>
                 </ul>
                 <span className="line"></span>
                 <div className="social-media-link-container">

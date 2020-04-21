@@ -35,7 +35,6 @@
 .navbar-active {
   position: fixed;
   background: #2671E1;
-  color: white;
   font-size: 64px;
   font-weight: medium;
   display: block;
@@ -48,6 +47,8 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  padding-top: 120px;
+  padding-bottom: 50px;
 }
 
 .navbar-active li {
@@ -56,12 +57,12 @@
   text-decoration: none;
 }
 
-.navbar-active .first {
-  padding-top: 120px;
+.navbar-active .selected {
+  color: white;
 }
 
-.navbar-active .last {
-  padding-bottom: 50px;
+.navbar-active .not-selected {
+  color: #C9CDF4;
 }
 
 .navbar-active span {

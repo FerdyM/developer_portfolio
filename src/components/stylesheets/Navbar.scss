@@ -29,7 +29,6 @@
 .navbar-active {
     position: fixed;
     background: #2671E1;
-    color: white;
     font-size: 64px;
     font-weight: medium;
     display: block;
@@ -40,18 +39,26 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
+        padding-top: 120px;
+        padding-bottom: 50px;
     }
     li {
         padding: 15px;
-        margin: 0;
+        margin: 0;  
         text-decoration: none;
     }
-    .first {
-        padding-top: 120px;
+    .selected {
+        color: white;
     }
-    .last {
-        padding-bottom: 50px;
+    .not-selected {
+        color: #C9CDF4;
     }
+    // .first {
+    //     padding-top: 120px;
+    // }
+    // .last {
+    //     padding-bottom: 50px;
+    // }
     span {
         display: block;
         position: relative;
