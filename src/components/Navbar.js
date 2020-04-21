@@ -56,13 +56,13 @@ class Navbar extends Component {
                 </ul>
                 <span className="line"></span>
                 <div className="social-media-link-container">
-                    <a href="https://github.com/FerdyM" target="_blank">
+                    <a href="https://github.com/FerdyM" target="_blank" rel="noopener noreferrer">
                         <img className="github-logo" src={githubLogo} alt="link to my github" />
                     </a>
-                    <a href="https://www.linkedin.com/in/ferdymacleod/" target="_blank">
+                    <a href="https://www.linkedin.com/in/ferdymacleod/" target="_blank" rel="noopener noreferrer">
                         <img className="linkedin-logo" src={linkedInLogo} alt="link to my linkedin" />
                     </a>
-                    <a href="https://twitter.com/ferdymacleod1" target="_blank">
+                    <a href="https://twitter.com/ferdymacleod1" target="_blank" rel="noopener noreferrer">
                         <img className="twitter-logo" src={twitterLogo} alt="link to my twitter" />
                     </a>
                 </div>

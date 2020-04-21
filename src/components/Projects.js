@@ -11,8 +11,8 @@ const Projects = () => {
                         <p>Quiz game</p>
                     </div>
                     <div className="project-links-container">
-                        <a className="view-code-link" href="https://github.com/FerdyM/QuizGame" target="_blank">View Code</a>
-                        <a className="view-live-link" href="https://romantic-goodall-9a7f7b.netlify.com/" target="_blank">View Live</a>
+                        <a className="view-code-link" href="https://github.com/FerdyM/QuizGame" target="_blank" rel="noopener noreferrer">View Code</a>
+                        <a className="view-live-link" href="https://romantic-goodall-9a7f7b.netlify.com/" target="_blank" rel="noopener noreferrer">View Live</a>
                     </div>
                 </div>
                 <div className="project project2" >
@@ -20,8 +20,8 @@ const Projects = () => {
                         <p>Web Portfolio</p>
                     </div>
                     <div className="project-links-container">
-                        <a className="view-code-link" href="https://github.com/FerdyM/developer_portfolio" target="_blank">View Code</a>
-                        <a className="view-live-link" href="https://localhost:3000" target="_blank">View Live</a>
+                        <a className="view-code-link" href="https://github.com/FerdyM/developer_portfolio" target="_blank" rel="noopener noreferrer">View Code</a>
+                        <a className="view-live-link" href="https://localhost:3000" target="_blank" rel="noopener noreferrer">View Live</a>
                     </div>
                 </div>
                 <div className="project project3" >
@@ -29,8 +29,8 @@ const Projects = () => {
                         <p>Robot Bartender</p>
                     </div>
                     <div className="project-links-container">
-                        <a className="view-code-link" href="https://github.com/FerdyM/SmartHomeDash" target="_blank">View Code</a>
-                        <a className="view-live-link" href="#" target="_blank">View Live</a>
+                        <a className="view-code-link" href="https://github.com/FerdyM/SmartHomeDash" target="_blank" rel="noopener noreferrer">View Code</a>
+                        <a className="view-live-link" href="#" target="_blank" rel="noopener noreferrer">View Live</a>
                     </div>
                 </div>
 

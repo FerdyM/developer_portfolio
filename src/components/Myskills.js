@@ -46,34 +46,34 @@ const Myskills = () => {
             <div className="frameworks">
                 <p>Frameworks</p>
                 <div className="row3">
-                    <img src={reactIcon} className="skill-icon" alt="" />
-                    <img src={angularIcon} className="skill-icon" alt="" />
-                    <img src={nodejsIcon} className="node-icon" alt="" />
-                    <img src={expressIcon} className="express-icon" alt="" />
+                    <img src={reactIcon} className="skill-icon" alt="react icon" />
+                    <img src={angularIcon} className="skill-icon" alt="angular icon" />
+                    <img src={nodejsIcon} className="node-icon" alt="nodejs icon" />
+                    <img src={expressIcon} className="express-icon" alt="express icon" />
                 </div>
                 <div className="row4">
-                <img src={railsIcon} className="skill-icon" alt="" />
-                <img src={materialIcon} className="skill-icon" alt="" />
-                <img src={bulmaIcon} className="bulma-icon" alt="" />
+                <img src={railsIcon} className="skill-icon" alt="rails icon" />
+                <img src={materialIcon} className="skill-icon" alt="material ui icon" />
+                <img src={bulmaIcon} className="bulma-icon" alt="bulma icon" />
                 </div>
             </div>
             <div className="databases">
                 <p>Databases</p>
                 <div className="row5" >
-                    <img src={mongodbIcon} className="skill-icon" alt="" />
-                    <img src={postgresIcon} className="skill-icon" alt="" />
+                    <img src={mongodbIcon} className="skill-icon" alt="mongodb icon" />
+                    <img src={postgresIcon} className="skill-icon" alt="postgresql icon" />
                 </div>
             </div>
             <div className="deployment">
                 <p>Deployment</p>
                 <div className="row6">
-                    <img src={awsIcon} className="aws-icon" alt="" />
-                    <img src={awsiotIcon} className="skill-icon" alt="" />
-                    <img src={dockerIcon} className="skill-icon" alt="" />
+                    <img src={awsIcon} className="aws-icon" alt="aws icon" />
+                    <img src={awsiotIcon} className="skill-icon" alt="aws iot icon" />
+                    <img src={dockerIcon} className="skill-icon" alt="docker icon" />
                 </div>
                 <div className="row7">
-                    <img src={githubBlack} className="skill-icon" alt="" />
-                    <img src={gitlabIcon} className="skill-icon" alt="" />
+                    <img src={githubBlack} className="skill-icon" alt="github icon" />
+                    <img src={gitlabIcon} className="skill-icon" alt="gitlab icon" />
                 </div>
             </div>
         </div>

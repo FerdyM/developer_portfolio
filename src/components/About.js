@@ -9,7 +9,7 @@ const About = () => {
         <Fragment>
             <div className="about-container">
                 <div className="profile-container">
-                    <img src={placeholder} alt="picture of not me" />
+                    <img src={placeholder} alt="placeholder" />
                 </div>
                 <h2>Ferdy Macleod</h2>
                 <p>
