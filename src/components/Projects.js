@@ -29,11 +29,19 @@ const Projects = () => {
                         <p>Robot Bartender</p>
                     </div>
                     <div className="project-links-container">
+                        <a className="view-code-link" href="https://github.com/FerdyM/RoBar" target="_blank" rel="noopener noreferrer">View Code</a>
+                        <a className="view-live-link" href="#" target="_blank" rel="noopener noreferrer">View Live</a>
+                    </div>
+                </div>
+                <div className="project project4" >
+                    <div className="project-title">
+                        <p>Custom Smarthome Dashboard</p>
+                    </div>
+                    <div className="project-links-container">
                         <a className="view-code-link" href="https://github.com/FerdyM/SmartHomeDash" target="_blank" rel="noopener noreferrer">View Code</a>
                         <a className="view-live-link" href="#" target="_blank" rel="noopener noreferrer">View Live</a>
                     </div>
                 </div>
-
             </div>
             <Footer />
         </Fragment>
