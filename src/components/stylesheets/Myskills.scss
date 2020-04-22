@@ -4,7 +4,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 300px 300px 200px 300px;
+    grid-template-rows: 100px 320px 300px 180px 350px;
     .title {
         font-size: 36px;
         font-weight: medium;
@@ -25,6 +25,7 @@
         grid-column: 1/2;
     }
     .languages {
+        margin-top: 20px;
         grid-row: 2/3;
         grid-column: 1/2;
         width: 100%;

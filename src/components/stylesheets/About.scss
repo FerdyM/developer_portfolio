@@ -22,3 +22,51 @@
         font-weight: medium;
     }
 }
+
+@media screen and (min-width: 800px) {
+    .about-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 1fr;
+        background: #2671E1;
+        color: white;       
+        height: 600px;
+        .profile-container {
+            grid-row: 1/2;
+            grid-column: 1/2;
+            width: 100%;
+            height: 100%;
+            background: white;
+            overflow: hidden;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        h2 {
+            position: relative;
+            grid-row: 1/2;
+            grid-column: 2/3;
+            padding: 10px 0 0 20px;
+            width: 600px;
+            text-align: left;
+            font-size:64px;
+            font-weight: bold;
+            margin-bottom: 400px;
+        }
+        p {
+            position: relative;
+            margin-top: 230px;
+            grid-row: 1/2;
+            grid-column: 2/3;
+            text-align: left;
+            padding: 10px 0 0 20px;
+            font-size: 30px;
+            font-weight: medium;
+        }
+        .text2 {
+            margin-top: 360px;
+        }
+    }
+}
