@@ -21,7 +21,7 @@ const Projects = () => {
                     </div>
                     <div className="project-links-container">
                         <a className="view-code-link" href="https://github.com/FerdyM/developer_portfolio" target="_blank" rel="noopener noreferrer">View Code</a>
-                        <a className="view-live-link" href="https://localhost:3000" target="_blank" rel="noopener noreferrer">View Live</a>
+                        <a className="view-live-link" href="https://suspicious-almeida-c889c5.netlify.app" target="_blank" rel="noopener noreferrer">View Live</a>
                     </div>
                 </div>
                 <div className="project project3" >
