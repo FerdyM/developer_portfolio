@@ -99,6 +99,14 @@
   font-size: 24px;
   font-weight: medium;
   padding: 10px 0 0 10px;
+  color: black;
+}
+
+.navbar-title-white {
+  font-size: 24px;
+  font-weight: medium;
+  padding: 10px 0 0 10px;
+  color: white;
 }
 
 .menu-icon {

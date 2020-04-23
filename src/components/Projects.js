@@ -42,6 +42,15 @@ const Projects = () => {
                         <a className="view-live-link" href="https://jolly-wiles-8c7a0e.netlify.app/" target="_blank" rel="noopener noreferrer">View Live</a>
                     </div>
                 </div>
+                <div className="project project5" >
+                    <div className="project-title">
+                        <p>To-Do-List</p>
+                    </div>
+                    <div className="project-links-container">
+                        <a className="view-code-link" href="https://github.com/FerdyM/ToDo-List" target="_blank" rel="noopener noreferrer">View Code</a>
+                        <a className="view-live-link" href="https://focused-albattani-08d2ff.netlify.app" target="_blank" rel="noopener noreferrer">View Live</a>
+                    </div>
+                </div>
             </div>
             <Footer />
         </Fragment>

@@ -48,6 +48,9 @@
     .project4 {
         background: #94BE00;
     }
+    .project5 {
+        background: #2671E1;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -106,6 +109,10 @@
         .project4 {
             grid-column: 2/3;
             background: #94BE00;
+        }
+        .project5 {
+            grid-column: 1/3;
+            background: #2671E1;
         }
     }
 }

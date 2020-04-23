@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import * as Scroll from 'react-scroll';
 import './stylesheets/Navbar.css';
 import menu from '../images/menu.png'
 import githubLogo from '../images/white-github-logo.png'
@@ -12,14 +13,36 @@ class Navbar extends Component {
         this.state = {
             menuActive: true,
             navClass: "navbar",
-            navTitle: "navbar-title",
+            navTitle: "navbar-title-white",
             menuItemOne: 'selected',
             menuItemTwo: 'not-selected',
             menuItemThree: 'not-selected',
             menuItemFour: 'not-selected',
         }
+        this.handleScroll = this.handleScroll.bind(this)
+    }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll, { passive: true })
+        
+    }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll)
     }
 
+    handleScroll(event) {
+        console.log(window.scrollY)
+        if (window.location.pathname == '/about') {
+            if (window.scrollY > 280 && window.scrollY < 770 ) {
+                this.setState({
+                    navTitle: 'navbar-title-white',
+                })
+            } else {
+                this.setState({
+                    navTitle: 'navbar-title',
+                })
+            }
+        }
+    }
     
     triggerMenu = () => {
         this.setState({menuActive: !this.state.menuActive});
@@ -30,13 +53,31 @@ class Navbar extends Component {
         }
     }
 
+    handleContactPage = () => {
+        this.setState({
+            navTitle: 'navbar-title',
+        })
+    }
+
+    handleContactPageMenu = () => {
+        this.setState({
+            navTitle: 'navbar-title-white',
+        })
+    }
 
     render() {
+        if (window.location.pathname === '/contact' && this.state.navTitle === 'navbar-title-white' && this.state.menuActive ) {
+            this.handleContactPage()
+        } 
+
+        if (window.location.pathname === '/contact' && this.state.menuActive  === false && this.state.navTitle === 'navbar-title') {
+            this.handleContactPageMenu()
+        } 
 
         return (
             <div className={this.state.navClass} >
-                <div className="navbar-top">
-                    <h2 className="navbar-title">Ferdy Macleod</h2>
+                <div className="navbar-top" id="scrollspy" >
+                    <h2 className={this.state.navTitle}>Ferdy Macleod</h2>
                     <img className="menu-icon" src={menu} alt="menu icon" onClick={this.triggerMenu} />
                 </div>
                 <ul className="cont">
