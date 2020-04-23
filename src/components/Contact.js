@@ -58,9 +58,10 @@ class ContactForm extends React.Component {
             <div className="form-container">
     
                 <h2>Contact Information</h2>
-
-                    <p className="text">Email: ferdymacleod21@gmail.com</p>
-                    <p className="text">Location: Brisbane, Australia</p>
+                <div className="text-div">
+                    <p>Email: ferdymacleod21@gmail.com</p>
+                    <p>Location: Brisbane, Australia</p>
+                </div>
 
                 <div className="links-container">
                     <Link to="https://github.com/FerdyM" target="_blank">
