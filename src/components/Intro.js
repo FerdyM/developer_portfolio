@@ -8,6 +8,7 @@ import './stylesheets/Intro.css'
 const Intro = () => {
     return (
         <div className="intro-container">
+            <a id="intro-anchor" />
             <div className="intro-points">
                 <img className="intro-icon1" src={codeLogo} alt="code-tag icon"/>
                 <p className="intro-text1">High Quality Code</p>

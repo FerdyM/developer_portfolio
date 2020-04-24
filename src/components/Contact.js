@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from './Footer'
 import './stylesheets/Contact.css'
 import GithubLogo from '../images/code-icons/github-black.png'
 import TwitterLogo from '../images/code-icons/twitter-black.png'
@@ -10,7 +9,6 @@ const Contact = () => {
     return (
         <div>
             <ContactForm />
-            <Footer />
         </div>
     )
 }

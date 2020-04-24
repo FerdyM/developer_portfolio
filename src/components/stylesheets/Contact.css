@@ -3,12 +3,12 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 100px 3fr 1fr 4fr;
-      grid-template-rows: 100px 3fr 1fr 4fr;
+  -ms-grid-rows: 100px 2fr auto 4fr;
+      grid-template-rows: 100px 2fr auto 4fr;
   border-top: 60px solid white;
   text-align: left;
   width: 100%;
-  height: calc(100vh - 130px);
+  height: calc(100vh - 60px);
   background: #F2F2F2;
 }
 
@@ -117,8 +117,9 @@
 }
 
 .form-container form .inputField {
-  font-size: 24px;
+  font-size: 18px;
   margin-left: 20px;
+  margin-bottom: 10px;
   background: none;
   border: none;
   height: 30px;
@@ -195,7 +196,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 /*# sourceMappingURL=Contact.css.map */
