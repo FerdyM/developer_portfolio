@@ -33,12 +33,15 @@ h3 {
     padding-top: 30px;
 }
 
-.down-arrow {
+.down-arrow-div {
     grid-row: 4/5;
     justify-self: center;
     align-self: flex-start;
+    img {
+        height: 80px;
+        width: 80px;
+    }
 }
-
 @media screen and (min-width: 800px) {
     .main {
         margin-top: 0;

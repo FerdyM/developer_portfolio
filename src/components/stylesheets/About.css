@@ -45,19 +45,21 @@
 .about-container p {
   text-align: left;
   padding: 10px 0 0 20px;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: medium;
+  width: 90%;
 }
 
 @media screen and (min-width: 800px) {
   .about-container {
     width: 100%;
+    height: calc(100vh - 60px);
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 45% 55%;
         grid-template-columns: 45% 55%;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    -ms-grid-rows: 100vh;
+        grid-template-rows: 100vh;
     background: #2671E1;
     color: white;
     height: 600px;
@@ -78,37 +80,37 @@
     height: 100%;
     width: 100%;
   }
-  .about-container h2 {
-    position: relative;
+  .about-container .about-main-container {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-    padding: 10px 0 0 20px;
-    width: 600px;
-    text-align: left;
-    font-size: 64px;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .about-container h2 {
+    width: 100px;
+    font-size: 48px;
     font-weight: bold;
-    margin-bottom: 400px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .about-container p {
-    position: relative;
-    margin-top: 230px;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    text-align: left;
-    padding: 10px 0 0 20px;
-    font-size: 30px;
-    font-weight: medium;
-  }
-  .about-container .text2 {
-    margin-top: 360px;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=About.css.map */

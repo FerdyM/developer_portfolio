@@ -10,9 +10,10 @@
 
 .intro-points {
   padding-top: 60px;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   height: 640px;
+  font-weight: bold;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -37,6 +38,7 @@
 }
 
 .intro-text1 {
+  padding-top: 5px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -62,6 +64,7 @@
 }
 
 .intro-text2 {
+  padding-top: 5px;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -87,6 +90,7 @@
 }
 
 .intro-text3 {
+  padding-top: 5px;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
@@ -102,6 +106,7 @@
 }
 
 .intro-para-container {
+  font-size: 24px;
   position: relative;
   margin-top: 100px;
   width: 100%;

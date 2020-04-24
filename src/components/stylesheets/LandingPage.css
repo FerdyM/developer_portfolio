@@ -47,7 +47,7 @@ h3 {
   padding-top: 30px;
 }
 
-.down-arrow {
+.down-arrow-div {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
@@ -55,6 +55,11 @@ h3 {
       justify-self: center;
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.down-arrow-div img {
+  height: 80px;
+  width: 80px;
 }
 
 @media screen and (min-width: 800px) {
