@@ -39,7 +39,7 @@ class ContactForm extends React.Component {
                 message: this.state.message
             })
         };
-        fetch('/api/contact', requestOptions)
+        fetch('https://salty-brushlands-62535.herokuapp.com/api/contact', requestOptions)
             .then(response => console.log(response))
             .catch(err => console.log(err))
 
