@@ -32,3 +32,13 @@
         }
     }
 }
+
+@media screen and (min-width: 450px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 225px 1fr 225px;
+    }
+    .icon-container {
+        grid-column: 3/4;
+    }
+}

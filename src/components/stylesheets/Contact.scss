@@ -106,3 +106,112 @@
         }
     }
 }
+
+@media screen and (min-width: 800px) {
+        .form-container {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            height: calc(100vh - 60px);
+            h2 {
+                grid-row: 1/2;
+                grid-column: 1/2;
+                align-self: start;
+                padding: 20px 0 0 20px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .text-div {
+                padding-left: 20px;
+                grid-row: 1/2;
+                grid-column: 1/2;
+                height: 40px;
+                align-self: flex-end;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                }
+            }
+            .links-container {
+                grid-row: 2/3;
+                grid-column: 1/2;
+                align-self: center;
+                padding: 30px 0;
+                height: 50px;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .or {
+                grid-row: 3/4;
+                grid-column: 1/2;
+                text-align: center;
+                font-size: 22px;
+                color: #2671E1;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+        
+            .submit-button {
+                height: 30px;
+                width: 60px;
+                background-color: #2671E1;
+                border-radius: 5px;
+                color: white;
+            }
+            form {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .inputField {
+                    font-size: 18px;
+                    margin-left: 20px;
+                    margin-bottom: 10px;
+                    background: none;
+                    border: none;
+                    height: 30px;
+                    width: 320px;
+                    border-bottom: 2px solid #2671E1;
+                }
+                .inputField::placeholder {
+                    color: black;
+                    font-size: 24px;
+                }
+                .messageField {
+                    font-size: 24px;
+                    margin-left: 20px;
+                    background: none;
+                    border: none;
+                    height: 100px;
+                    width: 320px;
+                    border-bottom: 2px solid #2671E1;
+                }
+                .messageField::placeholder {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    color: black;
+                    font-size: 24px;
+                }
+                .submit-button {
+                    height: 40px;
+                    width: 100px;
+                    font-size: 22px;
+                    align-self: center;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+
+}

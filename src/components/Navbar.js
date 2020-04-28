@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import * as Scroll from 'react-scroll';
 import './stylesheets/Navbar.css';
 import menu from '../images/menu.png'
 import blackMenu from '../images/open-menu.png'
@@ -7,6 +6,7 @@ import githubLogo from '../images/white-github-logo.png'
 import linkedInLogo from '../images/white-linkedin-logo.png'
 import twitterLogo from '../images/white-twitter-logo.png'
 import {Link} from "react-router-dom"
+import Resume from '../images/resume/FerdysResume.pdf'
 
 class Navbar extends Component {
     constructor(props) {
@@ -32,7 +32,7 @@ class Navbar extends Component {
     }
 
     handleScroll(event) {
-        if (window.location.pathname == '/about') {
+        if (window.location.pathname === '/about') {
             if (window.scrollY > 280 && window.scrollY < 770 ) {
                 this.setState({
                     navTitle: 'navbar-title-white',
@@ -116,12 +116,14 @@ class Navbar extends Component {
                             Contact
                         </li>
                     </Link>
+                    <Link onClick={() => {window.open(Resume)}} >
                         <li 
                             className={this.state.menuItemFour}
                             onClick={() => this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'not-selected', menuItemThree: 'not-selected', menuItemFour: 'selected'})}
                         >
                             Resume
                         </li>
+                    </Link>
                 </ul>
                 <span className="line"></span>
                 <div className="social-media-link-container">

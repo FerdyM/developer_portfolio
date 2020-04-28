@@ -50,4 +50,18 @@
   height: 50px;
   width: 50px;
 }
+
+@media screen and (min-width: 450px) {
+  .footer-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 225px 1fr 225px;
+        grid-template-columns: 225px 1fr 225px;
+  }
+  .icon-container {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

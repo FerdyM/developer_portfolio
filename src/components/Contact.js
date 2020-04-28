@@ -53,34 +53,34 @@ class ContactForm extends React.Component {
 
     render() {
         return (
-            <div className="form-container">
-    
-                <h2>Contact Information</h2>
-                <div className="text-div">
-                    <p>Email: ferdymacleod21@gmail.com</p>
-                    <p>Location: Brisbane, Australia</p>
-                </div>
+                <div className="form-container">
+        
+                    <h2>Contact Information</h2>
+                    <div className="text-div">
+                        <p>Email: ferdymacleod21@gmail.com</p>
+                        <p>Location: Brisbane, Australia</p>
+                    </div>
 
-                <div className="links-container">
-                    <Link to="https://github.com/FerdyM" target="_blank">
-                        <img src={GithubLogo} alt="github logo"/>
-                    </Link>
-                    <Link to="https://twitter.com/ferdymacleod1" target="_blank">
-                        <img src={TwitterLogo} alt="twitter logo"/>
-                    </Link>
-                    <Link to="https://www.linkedin.com/in/ferdymacleod/" target="_blank">
-                        <img src={LinkedinLogo} alt="linkedin logo"/>
-                    </Link>
+                    <div className="links-container">
+                        <Link to="https://github.com/FerdyM" target="_blank">
+                            <img src={GithubLogo} alt="github logo"/>
+                        </Link>
+                        <Link to="https://twitter.com/ferdymacleod1" target="_blank">
+                            <img src={TwitterLogo} alt="twitter logo"/>
+                        </Link>
+                        <Link to="https://www.linkedin.com/in/ferdymacleod/" target="_blank">
+                            <img src={LinkedinLogo} alt="linkedin logo"/>
+                        </Link>
+                    </div>
+                    <p className="or">Or</p>
+                    <form onSubmit={this.handleSubmit}>
+                            <input className="inputField" type="text" name="name" value={this.state.name} onChange={this.onFieldChange} placeholder="Name"/>
+                            <input className="inputField" type="text" name="email" value={this.state.email} onChange={this.onFieldChange} placeholder="Email"/>
+                            <input className="inputField" type="text" name="subject" value={this.state.subject} onChange={this.onFieldChange} placeholder="Subject"/>
+                            <textarea className="messageField" type="text" name="message" value={this.state.message} onChange={this.onFieldChange} placeholder="Message"/>
+                        <input className="submit-button" type="submit" value="Submit" />
+                    </form>
                 </div>
-                <p className="or">Or</p>
-                <form onSubmit={this.handleSubmit}>
-                        <input className="inputField" type="text" name="name" value={this.state.name} onChange={this.onFieldChange} placeholder="Name"/>
-                        <input className="inputField" type="text" name="email" value={this.state.email} onChange={this.onFieldChange} placeholder="Email"/>
-                        <input className="inputField" type="text" name="subject" value={this.state.subject} onChange={this.onFieldChange} placeholder="Subject"/>
-                        <textarea className="messageField" type="text" name="message" value={this.state.message} onChange={this.onFieldChange} placeholder="Message"/>
-                    <input className="submit-button" type="submit" value="Submit" />
-                </form>
-            </div>
         )
     }
 }

@@ -3,12 +3,13 @@ import githubLogo from '../images/white-github-logo.png'
 import linkedInLogo from '../images/white-linkedin-logo.png'
 import twitterLogo from '../images/white-twitter-logo.png'
 import './stylesheets/Footer.css'
+import Resume from '../images/resume/FerdysResume.pdf'
 
 const Footer = () => {
     return (
         <div className="footer-container" >
             <div className="resume-container">
-                <a href="/" className="resume-link" >
+                <a onClick={() => {window.open(Resume)}} className="resume-link" >
                     Resume
                 </a>
             </div>

@@ -23,6 +23,7 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: transparent;
 }
 
@@ -50,6 +51,10 @@
         padding: 15px;
         margin: 0;  
         text-decoration: none;
+        transition: 0.3s;
+    }
+    li:active {
+        transform: scale(1.1);
     }
     .selected {
         color: white;
@@ -89,22 +94,27 @@
 .navbar-title {
     font-size: 24px;
     font-weight: medium;  
-    padding: 10px 0 0 10px;
+    padding: 0 0 0 10px;
     color: black;
+    backdrop-filter: blur(1px);
 } 
 
 .navbar-title-white {
     font-size: 24px;
     font-weight: medium;  
-    padding: 10px 0 0 10px;
+    padding: 0 0 0 10px;
     color: white;
+    backdrop-filter: blur(1px);
 }
 
 .menu-icon {
     margin-right: 10px;
-    margin-top: 5px;
     height: 35px;
     width: 40px;
+    transition: 0.2s;
+}
+.menu-icon:active {
+    transform: scale(1.2);
 }
 
 .line {
@@ -199,3 +209,10 @@
         align-items: center;
     }
 }
+
+@media screen and (min-width: 376px) {
+    .menu-icon {
+        margin-right: 20px;
+    }
+}
+

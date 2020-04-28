@@ -42,6 +42,11 @@ h3 {
         width: 80px;
     }
 }
+@media screen and (min-width: 375px) and (max-width: 799px) {
+    .main {
+        background-size: cover;
+    }
+}
 @media screen and (min-width: 800px) {
     .main {
         margin-top: 0;
