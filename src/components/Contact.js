@@ -20,7 +20,8 @@ class ContactForm extends React.Component {
             name: '',
             email: '',
             subject: '',
-            message: ''
+            message: '',
+            loading: false
         }
         this.onFieldChange = this.onFieldChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -28,7 +29,7 @@ class ContactForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-
+        this.setState({loading: true})
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -40,7 +41,10 @@ class ContactForm extends React.Component {
             })
         };
         fetch('https://salty-brushlands-62535.herokuapp.com/api/contact', requestOptions)
-            .then(response => console.log(response))
+            .then(response => {
+                console.log(response)
+                this.setState({loading: false})
+            })
             .catch(err => console.log(err))
 
     }
@@ -60,6 +64,10 @@ class ContactForm extends React.Component {
                         <p>Email: ferdymacleod21@gmail.com</p>
                         <p>Location: Brisbane, Australia</p>
                     </div>
+                    {this.state.loading ? (<div className="spinner-div"><svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+                        </svg></div>) : (<></>)
+                    }
                     <form onSubmit={this.handleSubmit}>
                             <input className="inputField" type="text" name="name" value={this.state.name} onChange={this.onFieldChange} placeholder="Name"/>
                             <input className="inputField" type="text" name="email" value={this.state.email} onChange={this.onFieldChange} placeholder="Email"/>

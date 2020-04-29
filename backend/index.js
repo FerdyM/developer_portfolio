@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const cors = require('cors')
 const PORT = process.env.PORT || 3000
 const corsOptions = {
-    origin: 'https://www.ferdymacleod.com',
+    origin: '*',
     credentials: true,
 };
 
