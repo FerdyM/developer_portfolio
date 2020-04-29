@@ -228,8 +228,8 @@
 @media screen and (min-width: 800px) {
   .form-container {
     height: calc(100vh - 60px);
-    -ms-grid-rows: 80px 50px 1fr;
-        grid-template-rows: 80px 50px 1fr;
+    -ms-grid-rows: 120px 50px 1fr;
+        grid-template-rows: 120px 50px 1fr;
   }
   .form-container h2 {
     -ms-grid-row: 1;
@@ -238,7 +238,7 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -253,7 +253,7 @@
     grid-column: 1/2;
     height: 40px;
     text-align: left;
-    width: 300px;
+    width: 400px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -262,7 +262,7 @@
   }
   .form-container .text-div p {
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
   }
   .form-container .submit-button {
     height: 30px;
@@ -282,10 +282,13 @@
     grid-column: 1/2;
     -ms-grid-column-align: center;
         justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .form-container form .inputField {
-    margin-top: 5px;
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 24px;
     background: none;
     border: none;
     height: 30px;
@@ -294,23 +297,23 @@
   }
   .form-container form .inputField::-webkit-input-placeholder {
     color: black;
-    font-size: 18px;
+    font-size: 24px;
   }
   .form-container form .inputField:-ms-input-placeholder {
     color: black;
-    font-size: 18px;
+    font-size: 24px;
   }
   .form-container form .inputField::-ms-input-placeholder {
     color: black;
-    font-size: 18px;
+    font-size: 24px;
   }
   .form-container form .inputField::placeholder {
     color: black;
-    font-size: 18px;
+    font-size: 24px;
   }
   .form-container form .messageField {
-    margin-top: 5px;
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 24px;
     background: none;
     border: none;
     height: 80px;
@@ -322,28 +325,28 @@
     top: 0;
     left: 0;
     color: black;
-    font-size: 18px;
+    font-size: 24px;
   }
   .form-container form .messageField:-ms-input-placeholder {
     position: relative;
     top: 0;
     left: 0;
     color: black;
-    font-size: 18px;
+    font-size: 24px;
   }
   .form-container form .messageField::-ms-input-placeholder {
     position: relative;
     top: 0;
     left: 0;
     color: black;
-    font-size: 18px;
+    font-size: 24px;
   }
   .form-container form .messageField::placeholder {
     position: relative;
     top: 0;
     left: 0;
     color: black;
-    font-size: 18px;
+    font-size: 24px;
   }
   .form-container form .submit-button {
     margin-top: 10px;
