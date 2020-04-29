@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import Myskills from './Myskills'
 import Footer from './Footer'
-import placeholder from '../images/placeholder.png'
 import './stylesheets/About.css'
 
 const About = () => {
@@ -9,7 +8,7 @@ const About = () => {
         <Fragment>
             <div className="about-container">
                 <div className="profile-container">
-                    <img src={placeholder} alt="placeholder" />
+                    {/* <img src={placeholder} alt="placeholder" /> */}
                 </div>
                 <div className="about-main-container">
                     <h2>Ferdy Macleod</h2>

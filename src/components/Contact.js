@@ -55,24 +55,11 @@ class ContactForm extends React.Component {
         return (
                 <div className="form-container">
         
-                    <h2>Contact Information</h2>
+                    <h2>Contact Me</h2>
                     <div className="text-div">
                         <p>Email: ferdymacleod21@gmail.com</p>
                         <p>Location: Brisbane, Australia</p>
                     </div>
-
-                    <div className="links-container">
-                        <Link to="https://github.com/FerdyM" target="_blank">
-                            <img src={GithubLogo} alt="github logo"/>
-                        </Link>
-                        <Link to="https://twitter.com/ferdymacleod1" target="_blank">
-                            <img src={TwitterLogo} alt="twitter logo"/>
-                        </Link>
-                        <Link to="https://www.linkedin.com/in/ferdymacleod/" target="_blank">
-                            <img src={LinkedinLogo} alt="linkedin logo"/>
-                        </Link>
-                    </div>
-                    <p className="or">Or</p>
                     <form onSubmit={this.handleSubmit}>
                             <input className="inputField" type="text" name="name" value={this.state.name} onChange={this.onFieldChange} placeholder="Name"/>
                             <input className="inputField" type="text" name="email" value={this.state.email} onChange={this.onFieldChange} placeholder="Email"/>

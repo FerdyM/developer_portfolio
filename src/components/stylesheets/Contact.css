@@ -1,96 +1,29 @@
 .form-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 100px 2fr auto 4fr;
-      grid-template-rows: 100px 2fr auto 4fr;
   border-top: 60px solid white;
-  text-align: left;
   width: 100%;
   height: calc(100vh - 60px);
   background: #F2F2F2;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
 }
 
 .form-container h2 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  padding: 20px 0 0 20px;
   font-size: 24px;
   font-weight: bold;
 }
 
 .form-container .text-div {
   padding-left: 20px;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
   height: 40px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .form-container .text-div p {
   margin: 0;
-}
-
-.form-container .links-container {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-flex-item-align: center;
-      align-self: center;
-  padding: 30px 0;
-  height: 80px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.form-container .links-container img {
-  width: 80px;
-  height: 80px;
-}
-
-.form-container .or {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  text-align: center;
-  font-size: 22px;
-  color: #2671E1;
-  font-weight: bold;
-  margin-bottom: 0;
 }
 
 .form-container .submit-button {
@@ -104,22 +37,10 @@
 .form-container form {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .form-container form .inputField {
   font-size: 18px;
-  margin-left: 20px;
-  margin-bottom: 10px;
   background: none;
   border: none;
   height: 30px;
@@ -149,7 +70,6 @@
 
 .form-container form .messageField {
   font-size: 24px;
-  margin-left: 20px;
   background: none;
   border: none;
   height: 100px;
@@ -193,202 +113,125 @@
   height: 40px;
   width: 100px;
   font-size: 22px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 @media screen and (min-width: 800px) {
-  .wrapper {
+  .form-container {
     height: calc(100vh - 60px);
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 40% 60%;
-        grid-template-columns: 40% 60%;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    -ms-grid-rows: 80px 50px 1fr;
+        grid-template-rows: 80px 50px 1fr;
   }
-  .wrapper .form-container {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    height: calc(100vh - 60px);
-  }
-  .wrapper .form-container h2 {
+  .form-container h2 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
-    padding: 20px 0 0 20px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
   }
-  .wrapper .form-container .text-div {
-    padding-left: 20px;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    height: 40px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .wrapper .form-container .text-div p {
-    margin: 0;
-    font-size: 14px;
-  }
-  .wrapper .form-container .links-container {
+  .form-container .text-div {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-flex-item-align: center;
-        align-self: center;
-    padding: 30px 0;
-    height: 50px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    height: 40px;
+    text-align: left;
+    width: 300px;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
-  .wrapper .form-container .links-container img {
-    width: 50px;
-    height: 50px;
+  .form-container .text-div p {
+    margin: 0;
+    font-size: 14px;
   }
-  .wrapper .form-container .or {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    text-align: center;
-    font-size: 22px;
-    color: #2671E1;
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-  .wrapper .form-container .submit-button {
+  .form-container .submit-button {
     height: 30px;
     width: 60px;
     background-color: #2671E1;
     border-radius: 5px;
     color: white;
   }
-  .wrapper .form-container form {
-    width: 100%;
+  .form-container form {
+    width: 60%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
-  .wrapper .form-container form .inputField {
+  .form-container form .inputField {
     font-size: 18px;
-    margin-left: 20px;
-    margin-bottom: 10px;
     background: none;
     border: none;
     height: 30px;
-    width: 320px;
+    width: 100%;
     border-bottom: 2px solid #2671E1;
   }
-  .wrapper .form-container form .inputField::-webkit-input-placeholder {
+  .form-container form .inputField::-webkit-input-placeholder {
     color: black;
-    font-size: 24px;
+    font-size: 18px;
   }
-  .wrapper .form-container form .inputField:-ms-input-placeholder {
+  .form-container form .inputField:-ms-input-placeholder {
     color: black;
-    font-size: 24px;
+    font-size: 18px;
   }
-  .wrapper .form-container form .inputField::-ms-input-placeholder {
+  .form-container form .inputField::-ms-input-placeholder {
     color: black;
-    font-size: 24px;
+    font-size: 18px;
   }
-  .wrapper .form-container form .inputField::placeholder {
+  .form-container form .inputField::placeholder {
     color: black;
-    font-size: 24px;
+    font-size: 18px;
   }
-  .wrapper .form-container form .messageField {
-    font-size: 24px;
-    margin-left: 20px;
+  .form-container form .messageField {
+    font-size: 18px;
     background: none;
     border: none;
-    height: 100px;
-    width: 320px;
+    height: 80px;
+    width: 100%;
     border-bottom: 2px solid #2671E1;
   }
-  .wrapper .form-container form .messageField::-webkit-input-placeholder {
+  .form-container form .messageField::-webkit-input-placeholder {
     position: relative;
     top: 0;
     left: 0;
     color: black;
-    font-size: 24px;
+    font-size: 18px;
   }
-  .wrapper .form-container form .messageField:-ms-input-placeholder {
+  .form-container form .messageField:-ms-input-placeholder {
     position: relative;
     top: 0;
     left: 0;
     color: black;
-    font-size: 24px;
+    font-size: 18px;
   }
-  .wrapper .form-container form .messageField::-ms-input-placeholder {
+  .form-container form .messageField::-ms-input-placeholder {
     position: relative;
     top: 0;
     left: 0;
     color: black;
-    font-size: 24px;
+    font-size: 18px;
   }
-  .wrapper .form-container form .messageField::placeholder {
+  .form-container form .messageField::placeholder {
     position: relative;
     top: 0;
     left: 0;
     color: black;
-    font-size: 24px;
+    font-size: 18px;
   }
-  .wrapper .form-container form .submit-button {
-    height: 40px;
-    width: 100px;
-    font-size: 22px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  .form-container form .submit-button {
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=Contact.css.map */
