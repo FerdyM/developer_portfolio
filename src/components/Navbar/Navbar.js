@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import './stylesheets/Navbar.css';
-import menu from '../images/menu.png'
-import blackMenu from '../images/open-menu.png'
-import githubLogo from '../images/white-github-logo.png'
-import linkedInLogo from '../images/white-linkedin-logo.png'
-import twitterLogo from '../images/white-twitter-logo.png'
+// import '../stylesheets/Navbar.css';
+import menu from '../../images/menu.png'
+import blackMenu from '../../images/open-menu.png'
+import githubLogo from '../../images/white-github-logo.png'
+import linkedInLogo from '../../images/white-linkedin-logo.png'
+import twitterLogo from '../../images/white-twitter-logo.png'
 import {Link} from "react-router-dom"
-import Resume from '../images/resume/FerdysResume.pdf'
+import Resume from '../../images/resume/FerdysResume.pdf'
+import './stylesheet/Navbar.css'
 
 class Navbar extends Component {
     constructor(props) {
