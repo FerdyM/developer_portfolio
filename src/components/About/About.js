@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import Myskills from './Myskills'
-import Footer from './Footer'
-import './stylesheets/About.css'
+import Myskills from '../Myskills'
+import Footer from '../Footer'
+import './stylesheet/About.css'
 
 const About = () => {
     return (
@@ -12,7 +12,7 @@ const About = () => {
                 </div>
                 <div className="about-main-container">
                     <h2>Ferdy Macleod</h2>
-                    <p>
+                    <p className="text1"> 
                         I’m a quick thinking, simple-solution finding, high energy developer with a huge passion for 
                         the web and IOT.
                     </p>

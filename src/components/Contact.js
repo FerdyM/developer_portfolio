@@ -1,9 +1,5 @@
 import React from 'react'
 import './stylesheets/Contact.css'
-import GithubLogo from '../images/code-icons/github-black.png'
-import TwitterLogo from '../images/code-icons/twitter-black.png'
-import LinkedinLogo from '../images/code-icons/linkedin-black.png'
-import {Link} from "react-router-dom"
 
 const Contact = () => {
     return (
