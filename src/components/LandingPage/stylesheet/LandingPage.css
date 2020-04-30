@@ -6,8 +6,8 @@
   background-size: cover;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 0.7fr 2fr 1fr;
-      grid-template-rows: 0.7fr 2fr 1fr;
+  -ms-grid-rows: 0.4fr 2fr 1fr;
+      grid-template-rows: 0.4fr 2fr 1fr;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }
