@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import Main from './components/LandingPage';
+import Main from './components/LandingPage/LandingPage';
 import About from './components/About';
 import Contact from './components/Contact'
 import './App.css';

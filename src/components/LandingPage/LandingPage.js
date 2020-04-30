@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import './stylesheets/LandingPage.css';
-import Intro from './Intro';
-import Projects from './Projects'
-import downArrow from '../images/down.png'
+import Intro from '../Intro';
+import Projects from '../Projects'
+import downArrow from '../../images/down.png'
+import './stylesheet/LandingPage.css'
 
 const Main = () => {
     return (

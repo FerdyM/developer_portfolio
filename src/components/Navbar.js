@@ -95,7 +95,10 @@ class Navbar extends Component {
                     <Link to="/">
                         <li 
                             className={this.state.menuItemOne} 
-                            onClick={() => this.setState({  menuItemOne: 'selected', menuItemTwo: 'not-selected', menuItemThree: 'not-selected', menuItemFour: 'not-selected'})}
+                            onClick={() => {
+                                this.setState({  menuItemOne: 'selected', menuItemTwo: 'not-selected', menuItemThree: 'not-selected', menuItemFour: 'not-selected'})
+                                this.triggerMenu()
+                            }}
                         >
                             Home
                         </li>
@@ -103,7 +106,10 @@ class Navbar extends Component {
                     <Link to="/about">
                         <li 
                             className={this.state.menuItemTwo}
-                            onClick={() => this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'selected', menuItemThree: 'not-selected', menuItemFour: 'not-selected'})}
+                            onClick={() => {
+                                this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'selected', menuItemThree: 'not-selected', menuItemFour: 'not-selected'})
+                                this.triggerMenu()
+                            }}
                         >
                             About
                         </li>
@@ -111,7 +117,10 @@ class Navbar extends Component {
                     <Link to="/contact">
                         <li 
                             className={this.state.menuItemThree}
-                            onClick={() => this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'not-selected', menuItemThree: 'selected', menuItemFour: 'not-selected'})}
+                            onClick={() => {
+                                this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'not-selected', menuItemThree: 'selected', menuItemFour: 'not-selected'})
+                                this.triggerMenu()
+                            }}
                         >
                             Contact
                         </li>
@@ -119,7 +128,10 @@ class Navbar extends Component {
                     <Link onClick={() => {window.open(Resume)}} >
                         <li 
                             className={this.state.menuItemFour}
-                            onClick={() => this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'not-selected', menuItemThree: 'not-selected', menuItemFour: 'selected'})}
+                            onClick={() => {
+                                this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'not-selected', menuItemThree: 'not-selected', menuItemFour: 'selected'})
+                                this.triggerMenu()
+                            }}
                         >
                             Resume
                         </li>
