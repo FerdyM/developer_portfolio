@@ -29,7 +29,6 @@ class ContactForm extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        console.log(this.state)
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -43,10 +42,8 @@ class ContactForm extends React.Component {
         this.setState({
             loading: true
         })
-        console.log(this.state)
         fetch('https://salty-brushlands-62535.herokuapp.com/api/contact', requestOptions)
             .then(response => {
-                console.log(response)
                 this.setState({
                     loading: false,
                     name: '',
@@ -54,7 +51,6 @@ class ContactForm extends React.Component {
                     subject: '',
                     message: ''
                 })
-                console.log(this.state)
             })
             .catch(err => console.log(err))
 
