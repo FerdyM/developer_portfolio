@@ -2,12 +2,12 @@
   margin-top: 0;
   height: 100vh;
   width: 100%;
-  background-image: url("../../../images/chris-ried-ieic5Tq8YMk-unsplash (1) 1.png");
+  background-image: url("../images/jellyfish-back.jpg");
   background-size: cover;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 0.4fr 2fr 1fr;
-      grid-template-rows: 0.4fr 2fr 1fr;
+  -ms-grid-rows: 0.4fr 2fr 1.4fr;
+      grid-template-rows: 0.4fr 2fr 1.4fr;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }
@@ -35,13 +35,19 @@
 }
 
 .main .main-container h2 {
-  width: 90%;
+  width: 85%;
   font-size: 36px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px 0;
 }
 
 .main .main-container h3 {
   margin: 0;
-  width: 90%;
+  width: 85%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px 0;
 }
 
 .main .down-arrow-div {

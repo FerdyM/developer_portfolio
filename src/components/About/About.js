@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Myskills from '../Myskills'
-import Footer from '../Footer'
+import Footer from '../Footer/Footer'
 import './stylesheet/About.css'
 
 const About = () => {

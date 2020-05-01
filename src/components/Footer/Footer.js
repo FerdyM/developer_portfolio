@@ -1,9 +1,9 @@
 import React from 'react'
-import githubLogo from '../images/white-github-logo.png'
-import linkedInLogo from '../images/white-linkedin-logo.png'
-import twitterLogo from '../images/white-twitter-logo.png'
-import './stylesheets/Footer.css'
-import Resume from '../images/resume/FerdysResume.pdf'
+import githubLogo from '../../images/white-github-logo.png'
+import linkedInLogo from '../../images/white-linkedin-logo.png'
+import twitterLogo from '../../images/white-twitter-logo.png'
+import './stylesheet/Footer.css'
+import Resume from '../../images/resume/FerdysResume.pdf'
 
 const Footer = () => {
     return (
