@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import '../stylesheets/Navbar.css';
+import CloseIcon from '@material-ui/icons/Close'
 import menu from '../../images/menu.png'
 import blackMenu from '../../images/open-menu.png'
 import githubLogo from '../../images/white-github-logo.png'
@@ -84,12 +84,11 @@ class Navbar extends Component {
             <div className={this.state.navClass} >
                 <div className="navbar-top" id="scrollspy" >
                     <h2 className={this.state.navTitle}>Ferdy Macleod</h2>
-                    {this.state.navMenu ? (
-                        <img className="menu-icon" src={menu} alt="menu icon" onClick={this.triggerMenu} />
+                    {this.state.menuActive ? (
+                        <Menu navMenu={this.state.navMenu} triggerMenu={this.triggerMenu} />
                     ) : (
-                        <img className="menu-icon" src={blackMenu} alt="menu icon" onClick={this.triggerMenu} />
+                        <CloseIcon style={{ fontSize: 50 }} className="menu-icon" onClick={this.triggerMenu}/>
                     )}
-                    
                     
                 </div>
                 <ul className="cont">
@@ -152,6 +151,21 @@ class Navbar extends Component {
                 </div>
             </div>
         )
+    }
+}
+
+
+class Menu extends Component {
+    render() {
+        if (this.props.navMenu) {
+            return (
+                <img className="menu-icon" src={menu} alt="menu icon" onClick={this.props.triggerMenu} />
+            )
+        } else {
+            return (
+                <img className="menu-icon" src={blackMenu} alt="menu icon" onClick={this.props.triggerMenu} />
+            )
+        }
     }
 }
 
