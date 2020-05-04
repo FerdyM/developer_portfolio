@@ -5,7 +5,7 @@ import './stylesheets/Projects.css'
 const Projects = () => {
     return (
         <Fragment>
-            <div className="projects-container">
+            <div className="projects-container" id="project-start">
                 <div className="project project2" >
                     <div className="project-title">
                         <p>Web Portfolio</p>

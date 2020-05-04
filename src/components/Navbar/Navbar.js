@@ -7,6 +7,7 @@ import linkedInLogo from '../../images/white-linkedin-logo.png'
 import twitterLogo from '../../images/white-twitter-logo.png'
 import {Link} from "react-router-dom"
 import Resume from '../../images/resume/FerdysResume.pdf'
+import { animateScroll as scroll } from "react-scroll";
 import './stylesheet/Navbar.css'
 
 class Navbar extends Component {
@@ -31,6 +32,10 @@ class Navbar extends Component {
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll)
     }
+
+    scrollToTop = () => {
+        scroll.scrollToTop(); 
+    };
 
     handleScroll(event) {
         if (window.location.pathname === '/about') {
@@ -98,6 +103,7 @@ class Navbar extends Component {
                             onClick={() => {
                                 this.setState({  menuItemOne: 'selected', menuItemTwo: 'not-selected', menuItemThree: 'not-selected', menuItemFour: 'not-selected'})
                                 this.triggerMenu()
+                                this.scrollToTop()
                             }}
                         >
                             Home
@@ -109,6 +115,7 @@ class Navbar extends Component {
                             onClick={() => {
                                 this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'selected', menuItemThree: 'not-selected', menuItemFour: 'not-selected'})
                                 this.triggerMenu()
+                                this.scrollToTop()
                             }}
                         >
                             About
@@ -120,6 +127,7 @@ class Navbar extends Component {
                             onClick={() => {
                                 this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'not-selected', menuItemThree: 'selected', menuItemFour: 'not-selected'})
                                 this.triggerMenu()
+                                this.scrollToTop()
                             }}
                         >
                             Contact
@@ -130,7 +138,7 @@ class Navbar extends Component {
                             className={this.state.menuItemFour}
                             onClick={() => {
                                 this.setState({  menuItemOne: 'not-selected', menuItemTwo: 'not-selected', menuItemThree: 'not-selected', menuItemFour: 'selected'})
-                                this.triggerMenu()
+                                this.triggerMenu() 
                             }}
                         >
                             Resume
