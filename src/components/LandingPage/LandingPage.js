@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Intro from '../Intro';
 import Projects from '../Projects'
 import downArrow from '../../images/down.png'
+import ExpandMore from '@material-ui/icons/ExpandMoreRounded'
 import { Link } from 'react-scroll'
 import './stylesheet/LandingPage.css'
 
@@ -22,7 +23,7 @@ const Main = () => {
                     offset={0}
                     duration= {500}
                 >
-                    <img className="down-arrow" src={downArrow} alt="profile of me"/>
+                    <ExpandMore style={{fontSize: 150}} className="down-arrow"/>
                 </Link>
                 {/* </a> */}
             </div>
