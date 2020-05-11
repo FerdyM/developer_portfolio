@@ -1,6 +1,7 @@
 import React from 'react'
 import './stylesheet/Contact.css'
 import { TextField, Button, CircularProgress } from '@material-ui/core'
+import Alert from '@material-ui/lab/Alert'
 
 const Contact = () => {
     return (
@@ -18,13 +19,17 @@ class ContactForm extends React.Component {
             email: '',
             subject: '',
             message: '',
-            loading: false
+            loading: false,
+            sumbitSuccess: false,
+            submitError: false
         }
-        this.ongChange = this.onChange.bind(this);
+        this.onChange = this.onChange.bind(this);
         this.onEmailChange = this.onEmailChange.bind(this);
         this.onSubjectChange = this.onSubjectChange.bind(this);
         this.onMessageChange = this.onMessageChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleFailedSubmit = this.handleFailedSubmit.bind(this)
+        this.handleSuccessfulSubmit = this.handleSuccessfulSubmit.bind(this)
     }
 
     handleSubmit(event) {
@@ -52,10 +57,19 @@ class ContactForm extends React.Component {
                     message: '',
                     emailError: false,
                     subjectError: false,
-                    messageError: false
+                    messageError: false,
+                    sumbitSuccess: true
                 })
+                this.handleSuccessfulSubmit()
             })
-            .catch(err => console.log(err))
+            .catch(err => {
+                console.log(`Error: ${err}`)
+                this.setState({
+                    loading: false,
+                    submitError: true
+                })
+                this.handleFailedSubmit()
+            })
 
     }
 
@@ -124,6 +138,22 @@ class ContactForm extends React.Component {
         }, 10);  
     }
 
+    handleSuccessfulSubmit() {
+        setTimeout(() => {
+            this.setState({
+                sumbitSuccess: false
+            })
+        }, 3000);
+    }
+    
+    handleFailedSubmit() {
+        setTimeout(() => {
+            this.setState({
+                submitError: false
+            })
+        }, 3000);
+    }
+
     render() {
 
         return (
@@ -136,24 +166,34 @@ class ContactForm extends React.Component {
                     </div>
                     {this.state.loading ? (<CircularProgress className="loading" />) : (<></>)}
                     <form onSubmit={this.handleSubmit}> 
-                        <TextField className="input1" value={this.state.name} id="outlined-basic" name="name" label="Name" variant="outlined" onChange={this.onChange} />
+                        <TextField className="input1" name="name" value={this.state.name} id="outlined-basic" label="Name" variant="outlined" onChange={this.onChange} />
                         {this.state.emailError ? (
-                            <TextField error className="input2" name="email" value={this.state.email} id="outlined-basic" label="Email" variant="outlined" onChange={this.onEmailChange} />
+                            <TextField error helperText="Must be a valid email" className="input2" name="email" value={this.state.email} id="outlined-basic" label="Email" variant="outlined" onChange={this.onEmailChange} />
                         ) : (
                             <TextField className="input2" name="email" value={this.state.email} id="outlined-basic" label="Email" variant="outlined" onChange={this.onEmailChange} />
                         )}
                         {this.state.subjectError ? (
-                            <TextField error className="input3" name="subject" value={this.state.subject} id="outlined-basic" label="Subject" variant="outlined" onChange={this.onSubjectChange} />
+                            <TextField error helperText="Subject must be atleast 6 characters" className="input3" name="subject" value={this.state.subject} id="outlined-basic" label="Subject" variant="outlined" onChange={this.onSubjectChange} />
                         ) : (
                             <TextField className="input3" name="subject" value={this.state.subject} id="outlined-basic" label="Subject" variant="outlined" onChange={this.onSubjectChange} />
                         )}
                         {this.state.messageError ? (
-                            <TextField error className="input4" name="message" value={this.state.message} id="outlined-basic" label="Message" multiline variant="outlined" onChange={this.onMessageChange} />
+                            <TextField error helperText="Message must be atleast 6 characters" className="input4" name="message" value={this.state.message} id="outlined-basic" label="Message" multiline variant="outlined" onChange={this.onMessageChange} />
                         ) : (
                             <TextField className="input4" name="message" value={this.state.message} id="outlined-basic" label="Message" multiline variant="outlined" onChange={this.onMessageChange} />
                         )}
                         <Button className="button" type="submit" variant="contained" color="primary">Submit</Button>
                     </form>
+                    {this.state.sumbitSuccess ? (
+                        <Alert severity="success">Message sumbitted successfully!</Alert>
+                    ) : (
+                        <></>
+                    )}
+                    {this.state.submitError ? (
+                        <Alert severity="error">Message failed to submit!</Alert>
+                    ) : (
+                        <></>
+                    )}
                 </div>
         )
     }
