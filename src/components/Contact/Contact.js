@@ -47,7 +47,7 @@ class ContactForm extends React.Component {
         this.setState({
             loading: true
         })
-        fetch('https://salty-brushlands-62535.herokuapp.com/api/contact', requestOptions)
+        fetch('https://limitless-cove-69990.herokuapp.com/contact', requestOptions)
             .then(response => {
                 this.setState({
                     loading: false,

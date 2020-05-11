@@ -4,14 +4,9 @@ const contactForm = require('./routes/contactForm')
 const mongoose = require('mongoose');
 const cors = require('cors')
 const PORT = process.env.PORT || 3000
-const corsOptions = {
-    origin: '*',
-    credentials: true,
-};
-
 const dotenv = require('dotenv')
 
-app.use(cors(corsOptions))
+app.use(cors())
 
 dotenv.config();
 
