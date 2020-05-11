@@ -2,7 +2,6 @@ import React from 'react';
 import javascriptIcon from '../images/code-icons/javascript.png'
 import htmlIcon from '../images/code-icons/html.png'
 import cssIcon from '../images/code-icons/css-3.png'
-import javaIcon from '../images/code-icons/java.png'
 import pythonIcon from '../images/code-icons/python.png'
 import typescriptIcon from '../images/code-icons/typescript.png'
 import rubyIcon from '../images/code-icons/ruby.png'
@@ -28,54 +27,101 @@ const Myskills = () => {
         <div className="skills-container">
             <h2 className="title">My skills</h2>
             <div className="line" />
-            <div className="languages">
-                <p>Languages</p>
                 <div className="row1">
-                    <img src={htmlIcon} className="skill-icon" alt="html-icon" />
-                    <img src={cssIcon} className="skill-icon" alt="css-icon" />
-                    <img src={javascriptIcon} className="skill-icon" alt="javascript-icon" />
-                    <img src={typescriptIcon} className="skill-icon" alt="typescript-icon" />
+                    <div className="icon-container">     
+                        <img src={htmlIcon} className="skill-icon" alt="html-icon" />
+                        <p>HTML</p>
+                    </div>
+                    <div className="icon-container">     
+                        <img src={cssIcon} className="skill-icon" alt="css-icon" />
+                        <p>CSS/SASS</p>
+                    </div>
+                    <div className="icon-container">     
+                        <img src={javascriptIcon} className="skill-icon" alt="javascript-icon" />
+                        <p>Javascript</p>
+                    </div>
+                    <div className="icon-container">     
+                        <img src={typescriptIcon} className="skill-icon" alt="typescript-icon" />
+                        <p>Typescript</p>
+                    </div>
                 </div>
                 <div className="row2">
-                    <img src={pythonIcon} className="skill-icon" alt="python-icon" />
-                    <img src={cppIcon} className="skill-icon" alt="c++ icon" />
-                    <img src={rubyIcon} className="skill-icon" alt="ruby-icon" />
-                    <img src={javaIcon} className="skill-icon" alt="java-icon" />
+                    <div className="icon-container">
+                        <img src={pythonIcon} className="skill-icon" alt="python-icon" />
+                        <p>Python</p>
+                    </div>
+                    <div className="icon-container">
+                        <img src={cppIcon} className="skill-icon" alt="c++ icon" />
+                        <p>C++</p>
+                    </div>
+                    <div className="icon-container">
+                        <img src={rubyIcon} className="skill-icon" alt="ruby-icon" />
+                        <p>Ruby</p>
+                    </div>
                 </div>
-            </div>
-            <div className="frameworks">
-                <p>Frameworks</p>
                 <div className="row3">
-                    <img src={reactIcon} className="skill-icon" alt="react icon" />
-                    <img src={angularIcon} className="skill-icon" alt="angular icon" />
-                    <img src={nodejsIcon} className="node-icon" alt="nodejs icon" />
-                    <img src={expressIcon} className="express-icon" alt="express icon" />
+                    <div className="icon-container">
+                        <img src={reactIcon} className="skill-icon" alt="react icon" />
+                        <p>React</p>
+                    </div>
+                    <div className="icon-container">
+                        <img src={angularIcon} className="skill-icon" alt="angular icon" />
+                        <p>Angular</p>
+                    </div>
+                    <div className="icon-container">
+                        <img src={nodejsIcon} className="node-icon" alt="nodejs icon" />
+                        <p>NodeJS</p>
+                    </div>
+                    <div className="icon-container">
+                        <img src={expressIcon} className="express-icon" alt="express icon" />
+                        <p>Express</p>
+                    </div>
                 </div>
                 <div className="row4">
-                <img src={railsIcon} className="skill-icon" alt="rails icon" />
-                <img src={materialIcon} className="skill-icon" alt="material ui icon" />
-                <img src={bulmaIcon} className="bulma-icon" alt="bulma icon" />
+                    <div className="icon-container">
+                        <img src={railsIcon} className="skill-icon" alt="rails icon" />
+                        <p>Ruby on Rails</p>
+                    </div>
+                    <div className="icon-container">
+                        <img src={materialIcon} className="skill-icon" alt="material ui icon" />
+                        <p>Material-UI</p>
+                    </div>
                 </div>
-            </div>
-            <div className="databases">
-                <p>Databases</p>
                 <div className="row5" >
-                    <img src={mongodbIcon} className="skill-icon" alt="mongodb icon" />
-                    <img src={postgresIcon} className="skill-icon" alt="postgresql icon" />
+                    <div className="icon-container"> 
+                        <img src={mongodbIcon} className="skill-icon" alt="mongodb icon" />
+                        <p>MongoDB</p>
+                    </div>
+                    <div className="icon-container"> 
+                        <img src={postgresIcon} className="skill-icon" alt="postgresql icon" />
+                        <p>Postgresql</p>
+                    </div>
                 </div>
-            </div>
-            <div className="deployment">
-                <p>Deployment</p>
+
                 <div className="row6">
-                    <img src={awsIcon} className="aws-icon" alt="aws icon" />
-                    <img src={awsiotIcon} className="skill-icon" alt="aws iot icon" />
-                    <img src={dockerIcon} className="skill-icon" alt="docker icon" />
+                    <div className="icon-container">
+                        <img src={awsIcon} className="aws-icon" alt="aws icon" />
+                        <p>AWS</p>
+                    </div>
+                    <div className="icon-container">
+                        <img src={awsiotIcon} className="skill-icon" alt="aws iot icon" />
+                        <p>AWS IOT/Greengrass</p>
+                    </div>
+                    <div className="icon-container">
+                        <img src={dockerIcon} className="skill-icon" alt="docker icon" />
+                        <p>Docker</p>
+                    </div>
                 </div>
                 <div className="row7">
-                    <img src={githubBlack} className="skill-icon" alt="github icon" />
-                    <img src={gitlabIcon} className="skill-icon" alt="gitlab icon" />
+                    <div className="icon-container">
+                        <img src={githubBlack} className="skill-icon" alt="github icon" />
+                        <p>Github</p>
+                    </div>
+                    <div className="icon-container">
+                        <img src={gitlabIcon} className="skill-icon" alt="gitlab icon" />
+                        <p>Gitlab CI/CD</p>
+                    </div>
                 </div>
-            </div>
         </div>
     )
 }
