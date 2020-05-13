@@ -7,20 +7,21 @@
   margin-top: 0;
   height: 100vh;
   width: 100%;
-  background-image: url("../images/books.jpg");
+  background-color: #2671E1;
   background-size: cover;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 0.4fr 2fr 1.4fr;
-      grid-template-rows: 0.4fr 2fr 1.4fr;
+  -ms-grid-rows: 0.4fr 2fr 1fr;
+      grid-template-rows: 0.4fr 2fr 1fr;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }
 
 .main .main-container {
-  height: 100%;
   width: 100%;
   color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -42,7 +43,6 @@
 .main .main-container h2 {
   width: 85%;
   font-size: 36px;
-  background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   padding: 10px 0;
 }
@@ -50,7 +50,6 @@
 .main .main-container h3 {
   margin: 0;
   width: 85%;
-  background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   padding: 10px 0;
 }
@@ -65,10 +64,6 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.main .down-arrow-div .down-arrow {
-  color: black;
 }
 
 @media only screen and (min-height: 600px) {
