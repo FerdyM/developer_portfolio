@@ -6,7 +6,7 @@ This application was built with create-react-app, I wanted to keep it small and 
 
 If you find any bugs/want to review my code all feedback is appreciated very much as I am a junior!
 
-![gif of portfolio](https://github.com/FerdyM/developer_portfolio/docs/portfolio.gif)
+![gif of portfolio](https://github.com/FerdyM/developer_portfolio/blob/master/docs/portfolio.gif)
 
 ## Features
 
