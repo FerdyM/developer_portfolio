@@ -8,7 +8,7 @@ import './stylesheet/LandingPage.css'
 
 const Main = () => {
     return (
-        <Fragment className="all">
+        <Fragment>
             <div className="main">
                 <div className="main-container">
                     <h2>Not Just A Creative Software Developer</h2>
